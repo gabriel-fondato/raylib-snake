@@ -12,7 +12,8 @@ class Food {
     };
 
     void setRandomPos(int cellCount) {
-      pos = Vector2{static_cast<float>(GetRandomValue(0,cellCount)),static_cast<float>(GetRandomValue(0,cellCount))};
+      pos = Vector2{static_cast<float>(GetRandomValue(0,cellCount-1)),static_cast<float>(GetRandomValue(0,cellCount-1))};
+      std::cout << "food pos: " << pos.x << " " << pos.y << std::endl;
       
     };
 

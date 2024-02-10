@@ -26,4 +26,9 @@ public:
         body.pop_back();
         body.push_front(Vector2Add(body[0],direction));
     }
+
+    void increseSize() {
+        body.push_back(body.back());
+        //std::cout << "snake size increased " << body.back() << std::endl;
+    }
 };
